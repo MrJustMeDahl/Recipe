@@ -1,5 +1,7 @@
 package DTO;
 
+import Model.Person;
+
 public class PersonDTO {
     public int id;
     public String name;
@@ -21,5 +23,16 @@ public class PersonDTO {
         this.password = password;
         this.email = email;
         this.role = role;
+    }
+
+    public PersonDTO(Person person) {
+        this.id = person.getId();
+        this.name = person.getName();
+        this.password = person.getPassword();
+        this.email = person.getEmail();
+        this.role = person.getRole();
+    }
+
+    public PersonDTO() {
     }
 }

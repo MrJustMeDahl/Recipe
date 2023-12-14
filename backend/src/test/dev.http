@@ -1,0 +1,29 @@
+GET localhost:7070/api/persons
+###
+GET localhost:7070/api/persons/1
+###
+GET localhost:7070/api/persons/name/navn1
+###
+POST localhost:7070/api/persons
+accept: application/json
+content-type: application/json
+
+{
+    "name": "navn4",
+    "email": "navn4@mail.com",
+    "role": "user"
+}
+###
+PUT localhost:7070/api/persons/1
+accept: application/json
+content-type: application/json
+
+{
+    "id": "1",
+    "name": "nytNavn1",
+    "email": "nyEmail1@mail.com",
+    "role": "admin"
+}
+###
+DELETE localhost:7070/api/persons/1
+###

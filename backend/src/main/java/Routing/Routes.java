@@ -20,7 +20,7 @@ public class Routes {
         return () -> {
             app.routes(() -> {
                 //path("/", ); TODO
-                path("/persons", () -> {
+                path("/", () -> {
                     get(PERSONS, personController.getAllPersons());
                     get(PERSONS + "/{id}", personController.getPersonById());
                     get(PERSONS + "/name/{name}", personController.getPersonByName());

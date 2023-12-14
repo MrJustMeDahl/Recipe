@@ -1,5 +1,6 @@
 package Config;
 
+import Model.Person;
 import jakarta.persistence.EntityManagerFactory;
 import lombok.NoArgsConstructor;
 import org.hibernate.SessionFactory;
@@ -22,7 +23,7 @@ public class HibernateConfig {
             Configuration configuration = new Configuration();
 
             Properties props = new Properties();
-            String connctionURL = String.format("jdbc:postgresql://localhost:5432/DATABASENAME?currentSchema=public"); //TODO
+            String connctionURL = String.format("jdbc:postgresql://localhost:5432/recipe_db?currentSchema=public"); //TODO
             props.put("hibernate.connection.url", connctionURL);
             props.put("hibernate.connection.username", "postgres");
             props.put("hibernate.connection.password", "postgres");
@@ -80,6 +81,7 @@ public class HibernateConfig {
     private static void getAnnotationConfiguration(Configuration configuration) {
         // add annotated classes
         //TODO
+        configuration.addAnnotatedClass(Person.class);
     }
 
     public static EntityManagerFactory getEntityManagerFactoryConfig() {
