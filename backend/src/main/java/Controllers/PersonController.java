@@ -11,7 +11,7 @@ import java.util.stream.Collectors;
 
 public class PersonController implements IController{
     @Override
-    public Handler getAllPersons() {
+    public Handler getAll() {
 
         return ctx -> {
             PersonDAO personDAO = PersonDAO.getInstance();
@@ -25,7 +25,7 @@ public class PersonController implements IController{
     }
 
     @Override
-    public Handler getPersonById() {
+    public Handler getById() {
         return ctx->{
             String idString = ctx.pathParam("id");
             int id = Integer.parseInt(idString);
@@ -40,7 +40,7 @@ public class PersonController implements IController{
     }
 
     @Override
-    public Handler getPersonByName() {
+    public Handler getByName() {
         return ctx->{
             String nameString = ctx.pathParam("name");
             PersonDAO personDAO = PersonDAO.getInstance();
@@ -54,7 +54,7 @@ public class PersonController implements IController{
     }
 
     @Override
-    public Handler createPerson() {
+    public Handler create() {
         return ctx->{
             PersonDTO personDTO = ctx.bodyAsClass(PersonDTO.class);
             PersonDAO personDAO = PersonDAO.getInstance();
@@ -66,7 +66,7 @@ public class PersonController implements IController{
     }
 
     @Override
-    public Handler updatePerson() {
+    public Handler update() {
         return ctx->{
             PersonDTO personDTO = ctx.bodyAsClass(PersonDTO.class);
             PersonDAO personDAO = PersonDAO.getInstance();
@@ -77,7 +77,7 @@ public class PersonController implements IController{
     }
 
     @Override
-    public Handler deletePerson() {
+    public Handler delete() {
         return ctx->{
             String idString = ctx.pathParam("id");
             int id = Integer.parseInt(idString);

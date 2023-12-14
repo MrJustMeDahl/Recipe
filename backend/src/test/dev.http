@@ -27,3 +27,21 @@ content-type: application/json
 ###
 DELETE localhost:7070/api/persons/1
 ###
+
+GET localhost:7070/api/recipes
+
+###
+GET localhost:7070/api/recipes/1
+###
+GET localhost:7070/api/recipes/name/recipe1
+###
+POST localhost:7070/api/recipes
+accept: application/json
+content-type: application/json
+
+{
+    "name": "recipe4",
+    "description": "description4",
+    "ingredients": "ingredients4",
+    "instructions": "instructions4"
+}

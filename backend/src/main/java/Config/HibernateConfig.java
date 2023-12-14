@@ -1,6 +1,8 @@
 package Config;
 
 import Model.Person;
+import Model.Recipe;
+import Model.Tag;
 import jakarta.persistence.EntityManagerFactory;
 import lombok.NoArgsConstructor;
 import org.hibernate.SessionFactory;
@@ -82,6 +84,8 @@ public class HibernateConfig {
         // add annotated classes
         //TODO
         configuration.addAnnotatedClass(Person.class);
+        configuration.addAnnotatedClass(Recipe.class);
+        configuration.addAnnotatedClass(Tag.class);
     }
 
     public static EntityManagerFactory getEntityManagerFactoryConfig() {
