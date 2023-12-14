@@ -1,5 +1,8 @@
 package DTO;
 
+import lombok.Getter;
+
+@Getter
 public class PersonDTO {
     public int id;
     public String name;
@@ -20,6 +23,12 @@ public class PersonDTO {
         this.name = name;
         this.password = password;
         this.email = email;
+        this.role = role;
+    }
+
+    public PersonDTO(int id, String name, String role) {
+        this.id = id;
+        this.name = name;
         this.role = role;
     }
 }
