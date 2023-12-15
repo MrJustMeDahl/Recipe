@@ -13,9 +13,9 @@ import static io.javalin.apibuilder.ApiBuilder.*;
 
 public class Routes {
 
-    ExceptionHandler exceptionHandler = new ExceptionHandler();
-    PersonController personController = new PersonController();
-    RecipeController recipeController = new RecipeController();
+    private ExceptionHandler exceptionHandler = new ExceptionHandler();
+    private PersonController personController = new PersonController();
+    private RecipeController recipeController = new RecipeController();
 
     public static final String PERSONS = "/persons";
     public static final String RECIPES = "/recipes";
@@ -23,7 +23,6 @@ public class Routes {
     public EndpointGroup getRoutes(Javalin app){
         return () -> {
             app.routes(() -> {
-                //path("/", ); TODO
                 path("/", () -> {
                     get(PERSONS, personController.getAll());
                     get(PERSONS + "/{id}", personController.getById());

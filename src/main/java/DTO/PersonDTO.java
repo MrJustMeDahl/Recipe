@@ -1,7 +1,8 @@
 package DTO;
 
+import lombok.Getter;
 import Model.Person;
-
+@Getter
 public class PersonDTO {
     public int id;
     public String name;
@@ -34,5 +35,11 @@ public class PersonDTO {
     }
 
     public PersonDTO() {
+    }
+
+    public PersonDTO(int id, String name, String role) {
+        this.id = id;
+        this.name = name;
+        this.role = role;
     }
 }
