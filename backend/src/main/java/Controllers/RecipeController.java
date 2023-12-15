@@ -1,11 +1,14 @@
 package Controllers;
 
+import DTO.PersonDTO;
 import DTO.RecipeDTO;
 import Exceptions.APIException;
 import Model.Person;
 import Security.DAO.RecipeDAO;
 import io.javalin.http.Handler;
 import Model.Recipe;
+
+import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -16,11 +19,15 @@ public class RecipeController implements IController{
         return ctx -> {
             RecipeDAO RecipeDAO = Security.DAO.RecipeDAO.getInstance();
             List<Recipe> recipes = RecipeDAO.getAll(Recipe.class);
-            List<RecipeDTO> RecipeDTOS = recipes.stream().map(RecipeDTO::new).toList();
-            if (RecipeDTOS.isEmpty()) {
+            List<RecipeDTO> newRecipes = new ArrayList<>();
+            for(Recipe recipe : recipes){
+                newRecipes.add(new RecipeDTO(recipe));
+            }
+            //List<RecipeDTO> RecipeDTOS = recipes.stream().map(RecipeDTO::new).toList();
+            if (newRecipes.isEmpty()) {
                 throw new APIException(404, "No recipes in database");
             }
-            ctx.json(RecipeDTOS);
+            ctx.json(newRecipes);
         };
     }
 
@@ -56,9 +63,10 @@ public class RecipeController implements IController{
     @Override
     public Handler create() {
         return ctx->{
-            RecipeDTO RecipeDTO = ctx.bodyAsClass(RecipeDTO.class);
+            RecipeDTO recipeDTO = ctx.bodyAsClass(RecipeDTO.class);
+
             RecipeDAO RecipeDAO = Security.DAO.RecipeDAO.getInstance();
-            Recipe createdRecipe = RecipeDAO.create(RecipeDTO);
+            Recipe createdRecipe = RecipeDAO.create(recipeDTO);
             RecipeDTO createdRecipeDTO = new RecipeDTO(createdRecipe);
             ctx.status(201);
             ctx.json(createdRecipeDTO);

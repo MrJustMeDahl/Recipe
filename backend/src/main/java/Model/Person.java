@@ -1,14 +1,15 @@
 package Model;
 
 import DTO.PersonDTO;
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
+import DTO.RecipeDTO;
+import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+
+import java.util.ArrayList;
+import java.util.List;
 
 @Entity
 @Setter
@@ -23,6 +24,8 @@ public class Person {
     private String password;
     private String email;
     private String role;
+    @OneToMany(mappedBy = "person", cascade = CascadeType.ALL)
+    private List<Recipe> recipes;
 
     public Person(PersonDTO personDTO) {
         this.id = personDTO.id;
@@ -30,6 +33,15 @@ public class Person {
         this.password = personDTO.password;
         this.email = personDTO.email;
         this.role = personDTO.role;
+        this.recipes = new ArrayList<>();
+        for(RecipeDTO recipeDTO : personDTO.recipes){
+            this.addRecipe(new Recipe(recipeDTO));
+        }
+    }
+
+    //bidirecitonal setter
+    public void addRecipe(Recipe recipe) {
+        this.recipes.add(recipe);
     }
 
     public Person() {

@@ -43,5 +43,19 @@ content-type: application/json
     "name": "recipe4",
     "description": "description4",
     "ingredients": "ingredients4",
-    "instructions": "instructions4"
+    "instructions": "instructions4",
+    "tags": [
+        {
+            "name": "tag4"
+        }
+    ],
+    "person":
+        {
+            "id": "1",
+            "name": "navn4",
+            "email": "email4@mail.com",
+            "role": "user"
+        }
+
+
 }
