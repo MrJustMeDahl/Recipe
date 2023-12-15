@@ -13,7 +13,6 @@ import lombok.Setter;
 @Entity
 @Setter
 @Getter
-@NoArgsConstructor
 @AllArgsConstructor
 @Table(name = "persons")
 public class Person {
@@ -31,5 +30,8 @@ public class Person {
         this.password = personDTO.password;
         this.email = personDTO.email;
         this.role = personDTO.role;
+    }
+
+    public Person() {
     }
 }
