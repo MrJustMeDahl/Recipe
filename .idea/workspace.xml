@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="357d3329-2268-44bf-9231-3b0feee1d55c" name="Changes" comment="Restructured project">
+      <change beforePath="$PROJECT_DIR$/backend/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/.idea/misc.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Record" />
+        <option value="Enum" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Merge.Settings">
+    <option name="BRANCH" value="origin/backend" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$/.." value="main" />
+        <entry key="$PROJECT_DIR$" value="security" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0
+}</component>
+  <component name="ProjectId" id="2XIKvrrQS7uJaXcchWjldHduZbb" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/nicos/Dat 3 semester/Recipe&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RunManager">
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="backend" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="backend" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="357d3329-2268-44bf-9231-3b0feee1d55c" name="Changes" comment="" />
+      <created>1698311389612</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1698311389612</updated>
+      <workItem from="1698311390682" duration="1813000" />
+      <workItem from="1698659272503" duration="5834000" />
+      <workItem from="1698753690371" duration="753000" />
+      <workItem from="1698781739689" duration="151000" />
+      <workItem from="1698784651414" duration="108000" />
+      <workItem from="1698831677680" duration="3057000" />
+      <workItem from="1698863591378" duration="1064000" />
+      <workItem from="1698911832202" duration="605000" />
+      <workItem from="1698919854088" duration="3290000" />
+      <workItem from="1698924734784" duration="1396000" />
+      <workItem from="1699003624276" duration="193000" />
+      <workItem from="1699010801728" duration="1726000" />
+      <workItem from="1702548111923" duration="13057000" />
+      <workItem from="1702632126957" duration="792000" />
+      <workItem from="1702633011159" duration="16000" />
+    </task>
+    <task id="LOCAL-00001" summary="Removed deployment and made config for hibernate and javalin">
+      <option name="closed" value="true" />
+      <created>1698753730922</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1698753730922</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Fixed minor bugs">
+      <option name="closed" value="true" />
+      <created>1698781826562</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1698781826562</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Updated pom.xml">
+      <option name="closed" value="true" />
+      <created>1698784689069</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1698784689069</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Added route overview plugin">
+      <option name="closed" value="true" />
+      <created>1698831730779</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1698831730779</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Implemented APIException + handling for APIException and NumberFormatException">
+      <option name="closed" value="true" />
+      <created>1698832688279</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1698832688279</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Fixed exceptionHandler so that every method returns a Handler and created startcode for endpoint testing">
+      <option name="closed" value="true" />
+      <created>1698864414449</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1698864414449</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Added exceptionHandler in ExceptionHandler.java, and added timestamps to all exceptionsHandlers.">
+      <option name="closed" value="true" />
+      <created>1698920975097</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1698920975097</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Added route exception">
+      <option name="closed" value="true" />
+      <created>1698921841444</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1698921841444</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Added route exception">
+      <option name="closed" value="true" />
+      <created>1698926702985</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1698926702985</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Fixed exceptionHandler">
+      <option name="closed" value="true" />
+      <created>1699013475727</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1699013475727</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Implemented access manager for javalin">
+      <option name="closed" value="true" />
+      <created>1702585737297</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1702585737297</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Restructured project">
+      <option name="closed" value="true" />
+      <created>1702632204302</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1702632204302</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Removed deployment and made config for hibernate and javalin" />
+    <MESSAGE value="Fixed minor bugs" />
+    <MESSAGE value="Updated pom.xml" />
+    <MESSAGE value="Added route overview plugin" />
+    <MESSAGE value="Implemented APIException + handling for APIException and NumberFormatException" />
+    <MESSAGE value="Fixed exceptionHandler so that every method returns a Handler and created startcode for endpoint testing" />
+    <MESSAGE value="Added exceptionHandler in ExceptionHandler.java, and added timestamps to all exceptionsHandlers." />
+    <MESSAGE value="Added route exception" />
+    <MESSAGE value="Fixed exceptionHandler" />
+    <MESSAGE value="Implemented access manager for javalin" />
+    <MESSAGE value="Restructured project" />
+    <option name="LAST_COMMIT_MESSAGE" value="Restructured project" />
+  </component>
+</project>
