@@ -7,7 +7,7 @@ import io.javalin.apibuilder.EndpointGroup;
 
 public class Routes {
 
-    ExceptionHandler exceptionHandler = new ExceptionHandler();
+    private ExceptionHandler exceptionHandler = new ExceptionHandler();
 
     public EndpointGroup getRoutes(Javalin app){
         return () -> {
