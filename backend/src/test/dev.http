@@ -51,10 +51,7 @@ content-type: application/json
     ],
     "person":
         {
-            "id": "1",
-            "name": "navn4",
-            "email": "email4@mail.com",
-            "role": "user"
+            "id": "1"
         }
 
 

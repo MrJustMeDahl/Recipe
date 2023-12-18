@@ -26,14 +26,6 @@ public class RecipeDTO {
         this.person = author;
     }
 
-    public RecipeDTO(String name, String description, String ingredients, String instructions, List<TagDTO> tags, PersonDTO author) {
-        this.name = name;
-        this.description = description;
-        this.ingredients = ingredients;
-        this.instructions = instructions;
-        this.tags = tags;
-        this.person = author;
-    }
 
     public RecipeDTO(String name, String description, String ingredients, String instructions) {
         this.name = name;
@@ -51,7 +43,12 @@ public class RecipeDTO {
         for(Tag tag : recipe.getTags()){
             this.tags.add(new TagDTO(tag));
         }
-        this.person = new PersonDTO(recipe.getPerson());
+        if(recipe.getPerson() == null){
+            this.person = null;
+        }
+        else {
+            this.person = new PersonDTO(recipe.getPerson());
+        }
 
     }
     //Bidirectional setter for person
